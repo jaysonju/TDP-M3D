@@ -20,6 +20,14 @@ You can build the environment easily by installing the requirements:
     conda env create -f requirements.yml
     conda activate MonoTDP
 
+Train the model:
 
+    CUDA_VISIBLE_DEVICES=0,1,2,3 python tools/train_val.py
 
+Evaluation:
 
+    CUDA_VISIBLE_DEVICES=0,1,2,3 python tools/train_val.py -e
+
+Citation
+    
+    If you find our work useful in your research, please consider citing:
